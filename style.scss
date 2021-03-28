@@ -72,6 +72,7 @@
             &:hover {
               .dropdown {
                 opacity: 1;
+                visibility: visible;
                 z-index: 2;
               }
             }
@@ -79,6 +80,7 @@
             .dropdown {
               overflow-y: scroll;
               opacity: 0;
+              visibility: hidden;
               justify-content: center;
               align-items: center;
               height: 650px;
@@ -376,7 +378,6 @@
 .slider {
   height: 670px;
   position: relative;
-  margin-bottom: 20px;
   overflow-x: hidden;
 
   .slider-image {
@@ -393,15 +394,14 @@
       visibility: hidden;
 
       .video-container {
-        width: 100%;
         height: 100%;
         position: relative;
+        padding-top: 56.25%;
 
         .video {
           position: absolute;
           top: 0;
           left: 0;
-          width: 100%;
           height: 100%;
         }
       }
@@ -578,195 +578,147 @@
   }
 }
 
-// width 1500
-// height 650
-.demo1 {
-  .container {
-    display: flex;
-    height: 620px;
-    width: 1480px;
-    margin: 0 auto;
-    justify-content: space-between;
+.body-content-container {
+  margin: 0 20px;
 
-    .left {
-      width: 730px;
-      height: 100%;
+  .demo1 {
+    margin-top: 20px;
+
+    .demo1-container {
       display: flex;
       justify-content: space-between;
 
-      .left-1 {
-        width: 355px;
-        height: 100%;
+      .item {
+        flex-basis: calc(98.64791779% / 2);
+      }
+
+      .left {
+        height: 620px;
+        display: flex;
+        justify-content: space-between;
+
+        .iteml {
+          flex-basis: calc(97.25877193% / 2);
+        }
+
+        .left-1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .iteml1 {
+            height: 300px;
+          }
+        }
+      }
+
+      .right {
+        height: 620px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
-        .left-1-top {
+        .itemr {
           height: 300px;
-          background-color: brown;
-          overflow: hidden;
-
-          img {
-            &:hover {
-              transform: scale(1.1);
-              transition: all 1s linear;
-            }
-          }
         }
 
-        .left-1-bottom {
-          height: 300px;
-          background-color: brown;
-          overflow: hidden;
+        .right-top {
+          display: flex;
+          justify-content: space-between;
 
-          img {
-            &:hover {
-              transform: scale(1.1);
-              transition: all 1s linear;
-            }
-          }
-        }
-      }
-
-      .left-2 {
-        width: 355px;
-        height: 100%;
-        background-color: brown;
-        overflow: hidden;
-
-        img {
-          &:hover {
-            transform: scale(1.1);
-            transition: all 1s linear;
-          }
-        }
-      }
-    }
-
-    .right {
-      width: 730px;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-
-      .right-top {
-        height: 300px;
-        display: flex;
-        justify-content: space-between;
-
-        .right-top-1,
-        .right-top-2 {
-          overflow: hidden;
-          height: 100%;
-          width: 355px;
-          background-color: cadetblue;
-
-          img {
-            &:hover {
-              transform: scale(1.1);
-              transition: all 1s linear;
-            }
-          }
-        }
-      }
-
-      .right-bottom {
-        height: 300px;
-        background-color: cadetblue;
-        overflow: hidden;
-
-        img {
-          &:hover {
-            transform: scale(1.1);
-            transition: all 1s linear;
+          .itemrt {
+            flex-basis: calc(97.25877193% / 2);
           }
         }
       }
     }
   }
-}
 
-.demo2 {
-  margin: 60px 0;
-  .container-demo2 {
-    display: flex;
-    justify-content: space-evenly;
+  .demo2 {
+    margin: 20px 0;
 
-    .image {
-      flex-basis: 32%;
-      height: 400px;
-      position: relative;
+    .demo2-container {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
+      justify-content: space-between;
 
-      a {
+      .image {
+        flex-basis: calc(97.29583559% / 3);
+        height: 410px;
+        position: relative;
+        overflow: hidden;
+
+        a {
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+
+        .info {
+          .content-infor {
+            .content {
+              transform: scale(1.1);
+            }
+          }
+        }
+
         img {
-          &:hover {
-            transform: scale(1.1);
-          }
+          transition: all 0.6s linear;
         }
-      }
 
-      .info {
-        .content-infor {
-          .content {
-            transform: scale(1.1);
-          }
-        }
-      }
-
-      img {
-        transition: all 0.6s linear;
-      }
-
-      .info {
-        cursor: pointer;
-        border-radius: 8px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .content-infor {
+        .info {
+          cursor: pointer;
+          border-radius: 8px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
 
-          .content {
-            width: 230px;
-            height: 113px;
-            background-color: white;
-            transition: all 0.4s linear;
-
+          .content-infor {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
 
-            .ifn {
-              text-align: center;
-              text-transform: uppercase;
-              font-size: 16px;
+            .content {
+              width: 230px;
+              height: 113px;
+              background-color: white;
+              transition: all 0.4s linear;
 
-              span {
-                color: blue;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .ifn {
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 16px;
+
+                span {
+                  color: blue;
+                }
               }
-            }
 
-            .ifn2 {
-              text-align: center;
-              text-transform: uppercase;
-              font-size: 26px;
+              .ifn2 {
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 26px;
 
-              span {
-                color: blue;
+                span {
+                  color: blue;
+                }
               }
             }
           }
