@@ -690,7 +690,6 @@ function renderDemo2(arr = [], selector) {
           <div class="product-description">
             <div class="product-content">
               <div class="product-content-background"></div>
-
               <div class="title-small">
                 ${val.small}
                 <span class="blue-text-color">${val.small_span_content}</span>
