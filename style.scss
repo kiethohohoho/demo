@@ -754,12 +754,56 @@ li {
           }
 
           a {
-            img {
-              transition: 2s;
+            display: block;
+            z-index: 2;
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            .item-description {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100%;
+              width: 100%;
+              position: absolute;
+              left: 0;
+              top: 0;
+              z-index: 1;
 
               &:hover {
-                transform: scale(1.1);
+                .item-content {
+                  transform: scale(1.02);
+                  background-color: #2879fee9;
+                }
+
+                & + img {
+                  transform: scale(1.1);
+                }
               }
+
+              .item-content {
+                height: auto;
+                width: auto;
+                background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.9);
+                border-radius: 6px;
+                padding: 13px 39px 11px;
+                transition: 0.5s;
+
+                .title-small {
+                  text-transform: uppercase;
+                  font-size: 16px;
+                  font-weight: 500;
+                  line-height: 26px;
+                  text-align: center;
+                }
+              }
+            }
+
+            img {
+              transition: 2s;
+              width: 100%;
+              height: 100%;
             }
           }
         }
@@ -807,12 +851,56 @@ li {
           }
 
           a {
-            img {
-              transition: 2s;
+            display: block;
+            z-index: 2;
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            .item-description {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100%;
+              width: 100%;
+              position: absolute;
+              left: 0;
+              top: 0;
+              z-index: 1;
 
               &:hover {
-                transform: scale(1.1);
+                .item-content {
+                  transform: scale(1.02);
+                  background-color: #2879fee9;
+                }
+
+                & + img {
+                  transform: scale(1.1);
+                }
               }
+
+              .item-content {
+                height: auto;
+                width: auto;
+                background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.9);
+                border-radius: 6px;
+                padding: 13px 39px 11px;
+                transition: 0.5s;
+
+                .title-small {
+                  text-transform: uppercase;
+                  font-size: 16px;
+                  font-weight: 500;
+                  line-height: 26px;
+                  text-align: center;
+                }
+              }
+            }
+
+            img {
+              transition: 2s;
+              width: 100%;
+              height: 100%;
             }
           }
         }

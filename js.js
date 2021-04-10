@@ -686,26 +686,26 @@ function renderDemo2(arr = [], selector) {
     $(
       `
       <div class="image">
-              <a href="#">
-                <div class="product-description">
-                  <div class="product-content">
-                    <div class="title-small">
-                      ${val.small}
-                      <span class="blue-text-color">${val.small_span_content}</span>
-                    </div>
+        <a href="#">
+          <div class="product-description">
+            <div class="product-content">
+              <div class="title-small">
+                ${val.small}
+                <span class="blue-text-color">${val.small_span_content}</span>
+              </div>
 
-                    <div class="title-large">
-                      ${val.large}
-                      <span class="blue-text-color">${val.large_span_content}</span>
-                    </div>
-                  </div>
-                </div>
-  
-                <img
-                  src=${val.src}
-                />
-              </a>
+              <div class="title-large">
+                ${val.large}
+                <span class="blue-text-color">${val.large_span_content}</span>
+              </div>
             </div>
+          </div>
+
+          <img
+            src=${val.src}
+          />
+        </a>
+      </div>
       `
     ).appendTo(selector)
   );
