@@ -2,11 +2,11 @@ $flaticon-font: "flaticon";
 
 @font-face {
     font-family: $flaticon-font;
-    src: url("./flaticon.ttf?5146cef5cb9421090a6cb1ea6bc53397") format("truetype"),
-url("./flaticon.woff?5146cef5cb9421090a6cb1ea6bc53397") format("woff"),
-url("./flaticon.woff2?5146cef5cb9421090a6cb1ea6bc53397") format("woff2"),
-url("./flaticon.eot?5146cef5cb9421090a6cb1ea6bc53397#iefix") format("embedded-opentype"),
-url("./flaticon.svg?5146cef5cb9421090a6cb1ea6bc53397#flaticon") format("svg");
+    src: url("./flaticon.ttf?1b277895d7bbacf9f57492d982f2400c") format("truetype"),
+url("./flaticon.woff?1b277895d7bbacf9f57492d982f2400c") format("woff"),
+url("./flaticon.woff2?1b277895d7bbacf9f57492d982f2400c") format("woff2"),
+url("./flaticon.eot?1b277895d7bbacf9f57492d982f2400c#iefix") format("embedded-opentype"),
+url("./flaticon.svg?1b277895d7bbacf9f57492d982f2400c#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -21,28 +21,40 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 
 $flaticon-map: (
-    "left-arrow": "\f101",
-    "next": "\f102",
-    "search": "\f103",
-    "settings": "\f104",
-    "shopping-bag": "\f105",
-    "user": "\f106",
+    "cancel": "\f101",
+    "left-arrow": "\f102",
+    "right-arrow-angle": "\f103",
+    "search": "\f104",
+    "setting-lines": "\f105",
+    "shopping-bag": "\f106",
+    "star-half-empty": "\f107",
+    "star": "\f108",
+    "user": "\f109",
 );
 
+.flaticon-cancel:before {
+    content: map-get($flaticon-map, "cancel");
+}
 .flaticon-left-arrow:before {
     content: map-get($flaticon-map, "left-arrow");
 }
-.flaticon-next:before {
-    content: map-get($flaticon-map, "next");
+.flaticon-right-arrow-angle:before {
+    content: map-get($flaticon-map, "right-arrow-angle");
 }
 .flaticon-search:before {
     content: map-get($flaticon-map, "search");
 }
-.flaticon-settings:before {
-    content: map-get($flaticon-map, "settings");
+.flaticon-setting-lines:before {
+    content: map-get($flaticon-map, "setting-lines");
 }
 .flaticon-shopping-bag:before {
     content: map-get($flaticon-map, "shopping-bag");
+}
+.flaticon-star-half-empty:before {
+    content: map-get($flaticon-map, "star-half-empty");
+}
+.flaticon-star:before {
+    content: map-get($flaticon-map, "star");
 }
 .flaticon-user:before {
     content: map-get($flaticon-map, "user");

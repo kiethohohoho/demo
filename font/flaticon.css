@@ -1,41 +1,47 @@
-@charset "UTF-8";
 @font-face {
-  font-family: "flaticon";
-  src: url("./flaticon.ttf?5146cef5cb9421090a6cb1ea6bc53397") format("truetype"), url("./flaticon.woff?5146cef5cb9421090a6cb1ea6bc53397") format("woff"), url("./flaticon.woff2?5146cef5cb9421090a6cb1ea6bc53397") format("woff2"), url("./flaticon.eot?5146cef5cb9421090a6cb1ea6bc53397#iefix") format("embedded-opentype"), url("./flaticon.svg?5146cef5cb9421090a6cb1ea6bc53397#flaticon") format("svg");
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?1b277895d7bbacf9f57492d982f2400c") format("truetype"),
+url("./flaticon.woff?1b277895d7bbacf9f57492d982f2400c") format("woff"),
+url("./flaticon.woff2?1b277895d7bbacf9f57492d982f2400c") format("woff2"),
+url("./flaticon.eot?1b277895d7bbacf9f57492d982f2400c#iefix") format("embedded-opentype"),
+url("./flaticon.svg?1b277895d7bbacf9f57492d982f2400c#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
-  font-family: flaticon !important;
-  font-style: normal;
-  font-weight: normal !important;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
+.flaticon-cancel:before {
+    content: "\f101";
+}
 .flaticon-left-arrow:before {
-  content: "";
+    content: "\f102";
 }
-
-.flaticon-next:before {
-  content: "";
+.flaticon-right-arrow-angle:before {
+    content: "\f103";
 }
-
 .flaticon-search:before {
-  content: "";
+    content: "\f104";
 }
-
-.flaticon-settings:before {
-  content: "";
+.flaticon-setting-lines:before {
+    content: "\f105";
 }
-
 .flaticon-shopping-bag:before {
-  content: "";
+    content: "\f106";
 }
-
+.flaticon-star-half-empty:before {
+    content: "\f107";
+}
+.flaticon-star:before {
+    content: "\f108";
+}
 .flaticon-user:before {
-  content: "";
+    content: "\f109";
 }
-/*# sourceMappingURL=flaticon.css.map */

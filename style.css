@@ -511,6 +511,80 @@ li {
   left: 36%;
 }
 
+.header .header-container .header-holder .obj-options .parent-box .big-drop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  display: block;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  z-index: 999;
+}
+
+.header .header-container .header-holder .obj-options .parent-box .big-drop .big-drop-container {
+  margin: 0 auto;
+  padding: 40px 10px;
+  width: 79%;
+}
+
+.header .header-container .header-holder .obj-options .parent-box .big-drop .big-drop-container form {
+  position: relative;
+}
+
+.header .header-container .header-holder .obj-options .parent-box .big-drop .big-drop-container form .tt-btn {
+  color: #191919;
+  cursor: pointer;
+  display: inline-block;
+  background: none;
+  border: none;
+}
+
+.header .header-container .header-holder .obj-options .parent-box .big-drop .big-drop-container form .info-text {
+  color: #777777;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.header .header-container .header-holder .obj-options .parent-box .big-drop .big-drop-container form .btn-close-box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 10px;
+}
+
+.header .header-container .header-holder .obj-options .parent-box .big-drop .big-drop-container form .under-search input.search-input {
+  font-size: 24px;
+  font-weight: 500;
+  border: none;
+  border-bottom: 1px solid #eceaea;
+  padding: 11px 12px 10px 0px;
+  outline: none;
+  width: 100%;
+  color: #191919;
+  margin-top: 17px;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+
+.header .header-container .header-holder .obj-options .parent-box .big-drop .big-drop-container form .under-search input.search-input::-webkit-input-placeholder {
+  color: #191919;
+  text-transform: uppercase;
+}
+
+.header .header-container .header-holder .obj-options .parent-box .big-drop .big-drop-container form .under-search .tt-btn-search {
+  position: absolute;
+  right: 0px;
+  top: 47px;
+  font-size: 25px;
+  padding: 4px 0 4px 4px;
+  margin-top: -11px;
+  z-index: 3;
+}
+
 .slider {
   height: 670px;
   position: relative;

@@ -762,6 +762,16 @@ $(document).ready(function () {
   //render demo 2
   renderDemo2(demo3, ".demo3-container");
 
+  $(".big-drop").slideUp();
+
+  $("#btn-search").click(function () {
+    $(".big-drop").slideDown();
+  });
+
+  $("#btn-cancel").click(function () {
+    $(".big-drop").slideUp();
+  });
+
   //slider
   $("#btn-next").click(function () {
     let the_next_img = $(".active").next();
