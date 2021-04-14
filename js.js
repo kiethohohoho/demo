@@ -778,7 +778,7 @@ $(document).ready(function () {
 
     setTimeout(function () {
       $(".big-box-search").removeClass("hihi");
-    }, 450);
+    }, 360);
   });
 
   $(".flaticon-shopping-bag").click(function () {
