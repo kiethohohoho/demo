@@ -762,14 +762,62 @@ $(document).ready(function () {
   //render demo 2
   renderDemo2(demo3, ".demo3-container");
 
-  $(".big-drop").slideUp();
+  //big box dropdown obj-options
+  $(".big-box-search").slideUp();
+  $(".big-box-cart").slideUp();
+  $(".big-box-account").slideUp();
+  $(".big-box-settings").slideUp();
 
-  $("#btn-search").click(function () {
-    $(".big-drop").slideDown();
+  $(".flaticon-search").click(function () {
+    $(".big-box-search").addClass("hihi");
+    $(".big-box-search").slideDown(600);
   });
 
-  $("#btn-cancel").click(function () {
-    $(".big-drop").slideUp();
+  $(".flaticon-cancel").click(function () {
+    $(".big-box-search").slideUp();
+
+    setTimeout(function () {
+      $(".big-box-search").removeClass("hihi");
+    }, 450);
+  });
+
+  $(".flaticon-shopping-bag").click(function () {
+    if (!$(".big-box-cart").hasClass("clicked")) {
+      $(".big-box-cart").addClass("hihi").addClass("clicked");
+      $(".big-box-cart").slideDown();
+    } else {
+      $(".big-box-cart").slideUp();
+
+      setTimeout(function () {
+        $(".big-box-cart").removeClass("hihi").removeClass("clicked");
+      }, 360);
+    }
+  });
+
+  $(".flaticon-user").click(function () {
+    if (!$(".big-box-account").hasClass("clicked")) {
+      $(".big-box-account").addClass("hihi").addClass("clicked");
+      $(".big-box-account").slideDown();
+    } else {
+      $(".big-box-account").slideUp();
+
+      setTimeout(function () {
+        $(".big-box-account").removeClass("hihi").removeClass("clicked");
+      }, 360);
+    }
+  });
+
+  $(".flaticon-setting-lines").click(function () {
+    if (!$(".big-box-settings").hasClass("clicked")) {
+      $(".big-box-settings").addClass("hihi").addClass("clicked");
+      $(".big-box-settings").slideDown();
+    } else {
+      $(".big-box-settings").slideUp();
+
+      setTimeout(function () {
+        $(".big-box-settings").removeClass("hihi").removeClass("clicked");
+      }, 360);
+    }
   });
 
   //slider
@@ -837,4 +885,3 @@ $(document).ready(function () {
     }
   });
 });
-// gulp

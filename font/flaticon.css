@@ -1,47 +1,61 @@
+@charset "UTF-8";
 @font-face {
-    font-family: "flaticon";
-    src: url("./flaticon.ttf?1b277895d7bbacf9f57492d982f2400c") format("truetype"),
-url("./flaticon.woff?1b277895d7bbacf9f57492d982f2400c") format("woff"),
-url("./flaticon.woff2?1b277895d7bbacf9f57492d982f2400c") format("woff2"),
-url("./flaticon.eot?1b277895d7bbacf9f57492d982f2400c#iefix") format("embedded-opentype"),
-url("./flaticon.svg?1b277895d7bbacf9f57492d982f2400c#flaticon") format("svg");
+  font-family: "flaticon";
+  src: url("./flaticon.ttf?869213f69ce69803eb4fac4f4fe5c1d3") format("truetype"), url("./flaticon.woff?869213f69ce69803eb4fac4f4fe5c1d3") format("woff"), url("./flaticon.woff2?869213f69ce69803eb4fac4f4fe5c1d3") format("woff2"), url("./flaticon.eot?869213f69ce69803eb4fac4f4fe5c1d3#iefix") format("embedded-opentype"), url("./flaticon.svg?869213f69ce69803eb4fac4f4fe5c1d3#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
-    font-family: flaticon !important;
-    font-style: normal;
-    font-weight: normal !important;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .flaticon-cancel:before {
-    content: "\f101";
+  content: "";
 }
+
+.flaticon-heart:before {
+  content: "";
+}
+
 .flaticon-left-arrow:before {
-    content: "\f102";
+  content: "";
 }
+
+.flaticon-padlock:before {
+  content: "";
+}
+
 .flaticon-right-arrow-angle:before {
-    content: "\f103";
+  content: "";
 }
+
 .flaticon-search:before {
-    content: "\f104";
+  content: "";
 }
+
 .flaticon-setting-lines:before {
-    content: "\f105";
+  content: "";
 }
+
 .flaticon-shopping-bag:before {
-    content: "\f106";
+  content: "";
 }
+
 .flaticon-star-half-empty:before {
-    content: "\f107";
+  content: "";
 }
+
 .flaticon-star:before {
-    content: "\f108";
+  content: "";
 }
+
 .flaticon-user:before {
-    content: "\f109";
+  content: "";
 }
+/*# sourceMappingURL=flaticon.css.map */
