@@ -594,7 +594,7 @@ li {
   position: absolute;
   top: 100%;
   right: 0;
-  z-index: 2;
+  z-index: 1;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
   background-color: white;
@@ -624,16 +624,8 @@ li {
   margin: 16px 0 0 0px;
 }
 
-@media (min-width: 1025px) {
-  .header .header-container .header-holder .obj-options .parent-box .big-box-account {
-    width: 280px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .header .header-container .header-holder .obj-options .parent-box .big-box-account {
-    width: 270px;
-  }
+.header .header-container .header-holder .obj-options .parent-box .big-box-account {
+  width: 280px;
 }
 
 .header .header-container .header-holder .obj-options .parent-box .big-box-account .big-box-account-container {
@@ -661,12 +653,12 @@ li {
   color: #777777;
   padding: 1px 0;
   display: block;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 300;
 }
 
 .header .header-container .header-holder .obj-options .parent-box .big-box-account .big-box-account-container ul li a i {
-  margin-right: 8px;
+  margin-right: 5px;
   position: relative;
   top: 4px;
 }
@@ -677,6 +669,10 @@ li {
   position: relative;
   top: 4px;
   margin-right: 5px;
+}
+
+.header .header-container .header-holder .obj-options .parent-box .big-box-settings {
+  width: 285px;
 }
 
 .header .header-container .header-holder .obj-options .parent-box .big-box-settings .big-box-settings-container {

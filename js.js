@@ -820,6 +820,20 @@ $(document).ready(function () {
     }
   });
 
+  $(document).click(function (e) {
+    if ($(".big-box-settings").hasClass("clicked")) {
+      // Đối tượng container chứa popup
+      var select = $(".big-box-settings");
+
+      // Nếu click bên ngoài đối tượng container thì ẩn nó đi
+      if (!select.is(e.target) && select.has(e.target).length === 0) {
+        console.log(e);
+
+        select.hide();
+      }
+    }
+  });
+
   //slider
   $("#btn-next").click(function () {
     let the_next_img = $(".active").next();

@@ -584,7 +584,7 @@ li {
             position: absolute;
             top: 100%;
             right: 0;
-            z-index: 2;
+            z-index: 1;
             box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.08);
             background-color: white;
             opacity: 0;
@@ -615,19 +615,9 @@ li {
             }
           }
 
-          @media (min-width: 1025px) {
-            .big-box-account {
-              width: 280px;
-            }
-          }
-
-          @media (max-width: 1024px) {
-            .big-box-account {
-              width: 270px;
-            }
-          }
-
           .big-box-account {
+            width: 280px;
+
             .big-box-account-container {
               padding: 30px 20px 30px 39px;
 
@@ -643,11 +633,11 @@ li {
                     color: #777777;
                     padding: 1px 0;
                     display: block;
-                    font-size: 14px;
+                    font-size: 17px;
                     font-weight: 300;
 
                     i {
-                      margin-right: 8px;
+                      margin-right: 5px;
                       position: relative;
                       top: 4px;
                     }
@@ -666,6 +656,8 @@ li {
           }
 
           .big-box-settings {
+            width: 285px;
+
             .big-box-settings-container {
               padding: 30px 20px 30px 41px;
 
