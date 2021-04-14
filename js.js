@@ -769,8 +769,11 @@ $(document).ready(function () {
   $(".big-box-settings").slideUp();
 
   $(".flaticon-search").click(function () {
+    $(".hihi").slideUp().removeClass("hihi");
+
     $(".big-box-search").addClass("hihi");
     $(".big-box-search").slideDown(600);
+    $(".outside-layer2").show();
   });
 
   $(".flaticon-cancel").click(function () {
@@ -779,60 +782,101 @@ $(document).ready(function () {
     setTimeout(function () {
       $(".big-box-search").removeClass("hihi");
     }, 360);
+
+    $(".outside-layer2").hide();
   });
 
   $(".flaticon-shopping-bag").click(function () {
-    if (!$(".big-box-cart").hasClass("clicked")) {
-      $(".big-box-cart").addClass("hihi").addClass("clicked");
+    if (!$(".big-box-cart").hasClass("hihi")) {
+      $(".hihi").slideUp().removeClass("hihi");
+
+      $(".big-box-cart").addClass("hihi");
       $(".big-box-cart").slideDown();
+      $(".outside-layer").show();
     } else {
       $(".big-box-cart").slideUp();
 
       setTimeout(function () {
-        $(".big-box-cart").removeClass("hihi").removeClass("clicked");
+        $(".big-box-cart").removeClass("hihi");
       }, 360);
+
+      $(".outside-layer").hide();
     }
   });
 
   $(".flaticon-user").click(function () {
-    if (!$(".big-box-account").hasClass("clicked")) {
-      $(".big-box-account").addClass("hihi").addClass("clicked");
+    if (!$(".big-box-account").hasClass("hihi")) {
+      $(".hihi").slideUp().removeClass("hihi");
+
+      $(".big-box-account").addClass("hihi");
       $(".big-box-account").slideDown();
+      $(".outside-layer").show();
     } else {
       $(".big-box-account").slideUp();
 
       setTimeout(function () {
-        $(".big-box-account").removeClass("hihi").removeClass("clicked");
+        $(".big-box-account").removeClass("hihi");
       }, 360);
+
+      $(".outside-layer").hide();
     }
   });
 
   $(".flaticon-setting-lines").click(function () {
-    if (!$(".big-box-settings").hasClass("clicked")) {
-      $(".big-box-settings").addClass("hihi").addClass("clicked");
+    if (!$(".big-box-settings").hasClass("hihi")) {
+      $(".hihi").slideUp().removeClass("hihi");
+
+      $(".big-box-settings").addClass("hihi");
       $(".big-box-settings").slideDown();
+      $(".outside-layer").show();
     } else {
       $(".big-box-settings").slideUp();
 
       setTimeout(function () {
-        $(".big-box-settings").removeClass("hihi").removeClass("clicked");
+        $(".big-box-settings").removeClass("hihi");
       }, 360);
+
+      $(".outside-layer").hide();
     }
   });
 
-  $(document).click(function (e) {
-    if ($(".big-box-settings").hasClass("clicked")) {
-      // Đối tượng container chứa popup
-      var select = $(".big-box-settings");
+  $(".outside-layer").click(function () {
+    $(".big-box").slideUp();
 
-      // Nếu click bên ngoài đối tượng container thì ẩn nó đi
-      if (!select.is(e.target) && select.has(e.target).length === 0) {
-        console.log(e);
+    setTimeout(function () {
+      $(".big-box").removeClass("hihi");
+    }, 360);
 
-        select.hide();
-      }
-    }
+    $(".outside-layer").hide();
   });
+
+  $(".outside-layer2").click(function () {
+    $(".big-box-search").slideUp();
+
+    setTimeout(function () {
+      $(".big-box-search").removeClass("hihi");
+    }, 360);
+
+    $(".outside-layer2").hide();
+  });
+
+  // $(".outside-layer").show();
+
+  // $(document).click(function (e) {
+  //   if (
+  //     $(".big-box-settings").hasClass("clicked") &&
+  //     this == $(".flaticon-setting-lines")
+  //   ) {
+  //     console.log("aaa");
+  //     // Đối tượng container chứa popup
+  //     var select = $(".big-box-settings");
+
+  //     // Nếu click bên ngoài đối tượng container thì ẩn nó đi
+  //     if (!select.is(e.target) && select.has(e.target).length === 0) {
+  //       select.hide();
+  //     }
+  //   }
+  // });
 
   //slider
   $("#btn-next").click(function () {
