@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "flaticon";
-  src: url("./flaticon.ttf?869213f69ce69803eb4fac4f4fe5c1d3") format("truetype"), url("./flaticon.woff?869213f69ce69803eb4fac4f4fe5c1d3") format("woff"), url("./flaticon.woff2?869213f69ce69803eb4fac4f4fe5c1d3") format("woff2"), url("./flaticon.eot?869213f69ce69803eb4fac4f4fe5c1d3#iefix") format("embedded-opentype"), url("./flaticon.svg?869213f69ce69803eb4fac4f4fe5c1d3#flaticon") format("svg");
+  src: url("./flaticon.ttf?e7cda0da834cf36222dacfc4ad8d43df") format("truetype"), url("./flaticon.woff?e7cda0da834cf36222dacfc4ad8d43df") format("woff"), url("./flaticon.woff2?e7cda0da834cf36222dacfc4ad8d43df") format("woff2"), url("./flaticon.eot?e7cda0da834cf36222dacfc4ad8d43df#iefix") format("embedded-opentype"), url("./flaticon.svg?e7cda0da834cf36222dacfc4ad8d43df#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -19,43 +19,47 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
   content: "";
 }
 
-.flaticon-heart:before {
+.flaticon-eye-variant-with-enlarged-pupil:before {
   content: "";
 }
 
-.flaticon-left-arrow:before {
+.flaticon-heart:before {
   content: "";
 }
 
-.flaticon-padlock:before {
+.flaticon-left-arrow:before {
   content: "";
 }
 
-.flaticon-right-arrow-angle:before {
+.flaticon-padlock:before {
   content: "";
 }
 
-.flaticon-search:before {
+.flaticon-right-arrow-angle:before {
   content: "";
 }
 
-.flaticon-setting-lines:before {
+.flaticon-search:before {
   content: "";
 }
 
-.flaticon-shopping-bag:before {
+.flaticon-setting-lines:before {
   content: "";
 }
 
-.flaticon-star-half-empty:before {
+.flaticon-shopping-bag:before {
   content: "";
 }
 
-.flaticon-star:before {
+.flaticon-star-half-empty:before {
   content: "";
 }
 
-.flaticon-user:before {
+.flaticon-star:before {
   content: "";
+}
+
+.flaticon-user:before {
+  content: "";
 }
 /*# sourceMappingURL=flaticon.css.map */

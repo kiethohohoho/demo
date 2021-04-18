@@ -619,6 +619,106 @@ fixData(boxedWidth);
 fixData(fullWidth);
 fixData(buyTheme);
 
+//DEM02-product
+const demo2 = [
+  {
+    main_src:
+      "//cdn.shopify.com/s/files/1/0130/5041/3114/products/Premier_Cropped_Skinny_Jean_13_8d64f29d-9ef1-4cb1-9fa6-6193c913ccd0_280x.jpg?v=1590592896 1x,//cdn.shopify.com/s/files/1/0130/5041/3114/products/Premier_Cropped_Skinny_Jean_13_8d64f29d-9ef1-4cb1-9fa6-6193c913ccd0_560x.jpg?v=1590592896 2x",
+    lastStar: "flaticon-star",
+    title: "gap",
+    name: "slim fit cotton oxford shirt",
+    price: "$500.00",
+    option_src1:
+      "//cdn.shopify.com/s/files/1/0130/5041/3114/products/Slim_Fit_Cotton_Oxford_Shirt_b5886078-d798-4bb7-9cb4-b5d207472f9d_100x.jpg?v=1542377046",
+    option_src2:
+      "//cdn.shopify.com/s/files/1/0130/5041/3114/products/Slim_Fit_Cotton_Oxford_Shirt_4_f523b5d4-bd2f-4c0c-af69-15b55a7cb750_100x.jpg?v=1542377046",
+  },
+  {
+    main_src:
+      "//cdn.shopify.com/s/files/1/0130/5041/3114/products/Featherweight_Pima_Hoodie_4_e2b11fbc-2853-488d-a075-f8bf63034128_280x.jpg?v=1570224771 1x,//cdn.shopify.com/s/files/1/0130/5041/3114/products/Featherweight_Pima_Hoodie_4_e2b11fbc-2853-488d-a075-f8bf63034128_560x.jpg?v=1570224771 2x",
+    lastStar: "flaticon-star-half-empty",
+    title: "gap",
+    name: "east hampton fleece hoodie",
+    price: "$440.00",
+    option_src1:
+      "https://cdn.shopify.com/s/files/1/0130/5041/3114/products/Featherweight_Pima_Hoodie_4_e2b11fbc-2853-488d-a075-f8bf63034128_100x.jpg?v=1570224771",
+    option_src2:
+      "https://cdn.shopify.com/s/files/1/0130/5041/3114/products/Featherweight_Pima_Hoodie_7270f97f-f554-4568-bf1a-30e7490a5a92_100x.jpg?v=1570224771",
+  },
+  {
+    main_src:
+      "//cdn.shopify.com/s/files/1/0130/5041/3114/products/Relaxed-Fit_Cotton_Shirt_4_280x.jpg?v=1542375186 1x,//cdn.shopify.com/s/files/1/0130/5041/3114/products/Relaxed-Fit_Cotton_Shirt_4_560x.jpg?v=1542375186 2x",
+    lastStar: "flaticon-star-half-empty",
+    title: "guess",
+    name: "relaxed-fit cotton shirt",
+    price: "$440.00",
+    option_src1:
+      "https://cdn.shopify.com/s/files/1/0130/5041/3114/products/Relaxed-Fit_Cotton_Shirt_5_7c017f4c-14af-4aeb-bd71-483698f89154_100x.jpg?v=1542375186",
+    option_src2:
+      "https://cdn.shopify.com/s/files/1/0130/5041/3114/products/Relaxed-Fit_Cotton_Shirt_1_cb5951bf-ef65-4d30-84f4-f42135a58f69_100x.jpg?v=1542375186",
+  },
+  {
+    main_src:
+      "//cdn.shopify.com/s/files/1/0130/5041/3114/products/Tailored_Fit_Mesh-Panel_Polo_4_fba54f8e-368e-4537-92ff-03fef8a6c09c_280x.jpg?v=1542378159 1x,//cdn.shopify.com/s/files/1/0130/5041/3114/products/Tailored_Fit_Mesh-Panel_Polo_4_fba54f8e-368e-4537-92ff-03fef8a6c09c_560x.jpg?v=1542378159 2x",
+    lastStar: "flaticon-star",
+    title: "zara",
+    name: "tailored fit mesh-panel polo",
+    price: "$400.00",
+    option_src1:
+      "//cdn.shopify.com/s/files/1/0130/5041/3114/products/Tailored_Fit_Mesh-Panel_Polo_4_fba54f8e-368e-4537-92ff-03fef8a6c09c_100x.jpg?v=1542378159",
+    option_src2:
+      "//cdn.shopify.com/s/files/1/0130/5041/3114/products/Tailored_Fit_Mesh-Panel_Polo_a2af7d12-3500-4ac1-b571-fa9a6ae09cc9_100x.jpg?v=1542378159",
+  },
+  {
+    main_src:
+      "//cdn.shopify.com/s/files/1/0130/5041/3114/products/Slim_Fit_Cotton_Oxford_Shirt_b5886078-d798-4bb7-9cb4-b5d207472f9d_280x.jpg?v=1542377046 1x,//cdn.shopify.com/s/files/1/0130/5041/3114/products/Slim_Fit_Cotton_Oxford_Shirt_b5886078-d798-4bb7-9cb4-b5d207472f9d_560x.jpg?v=1542377046 2x",
+    lastStar: "flaticon-star",
+    title: "levi's",
+    name: "slim fit cotton oxford shirt",
+    price: "$500.00",
+    option_src1:
+      "//cdn.shopify.com/s/files/1/0130/5041/3114/products/Slim_Fit_Cotton_Oxford_Shirt_b5886078-d798-4bb7-9cb4-b5d207472f9d_100x.jpg?v=1542377046",
+    option_src2:
+      "//cdn.shopify.com/s/files/1/0130/5041/3114/products/Slim_Fit_Cotton_Oxford_Shirt_4_f523b5d4-bd2f-4c0c-af69-15b55a7cb750_100x.jpg?v=1542377046",
+  },
+  {
+    main_src:
+      "//cdn.shopify.com/s/files/1/0130/5041/3114/products/Faxon_Chambray_Low-Top_Sneaker_Featured_280x.jpg?v=1603990450 1x,//cdn.shopify.com/s/files/1/0130/5041/3114/products/Faxon_Chambray_Low-Top_Sneaker_Featured_560x.jpg?v=1603990450 2x",
+    lastStar: "flaticon-star",
+    title: "nara",
+    name: "faxon canvas low-top sneaker",
+    price: "$460.00",
+    option_src1:
+      "//cdn.shopify.com/s/files/1/0130/5041/3114/products/Faxon_Chambray_Low-Top_Sneaker_9_100x.jpg?v=1603990450",
+    option_src2:
+      "//cdn.shopify.com/s/files/1/0130/5041/3114/products/Faxon_Canvas_Low-Top_Sneaker_1_100x.jpg?v=1603990442",
+  },
+  {
+    main_src:
+      "//cdn.shopify.com/s/files/1/0130/5041/3114/products/Viscose-Cashmere_Scarf_4_280x.jpg?v=1542378680 1x,//cdn.shopify.com/s/files/1/0130/5041/3114/products/Viscose-Cashmere_Scarf_4_560x.jpg?v=1542378680 2x",
+    lastStar: "flaticon-star-half-empty",
+    title: "lacoste",
+    name: "viscose-cashmere scarf",
+    price: "$440.00",
+    option_src1:
+      "//cdn.shopify.com/s/files/1/0130/5041/3114/products/Viscose-Cashmere_Scarf_4_100x.jpg?v=1542378680",
+    option_src2:
+      "//cdn.shopify.com/s/files/1/0130/5041/3114/products/Viscose-Cashmere_Scarf_2_100x.jpg?v=1542378680",
+  },
+  {
+    main_src:
+      "//cdn.shopify.com/s/files/1/0130/5041/3114/products/Plaid_Cotton_Oxford_Shirt_8_a45b2d4e-994e-4ffe-9909-04331f601478_280x.jpg?v=1542307746 1x,//cdn.shopify.com/s/files/1/0130/5041/3114/products/Plaid_Cotton_Oxford_Shirt_8_a45b2d4e-994e-4ffe-9909-04331f601478_560x.jpg?v=1542307746 2x",
+    lastStar: "flaticon-star-half-empty",
+    title: "levi's",
+    name: "plaid cotton oxford shirt",
+    price: "$20.00",
+    option_src1:
+      "//cdn.shopify.com/s/files/1/0130/5041/3114/products/Plaid_Cotton_Oxford_Shirt_8_a45b2d4e-994e-4ffe-9909-04331f601478_100x.jpg?v=1542307746",
+    option_src2:
+      "//cdn.shopify.com/s/files/1/0130/5041/3114/products/Plaid_Cotton_Oxford_Shirt_4_a0b1004b-608f-45b8-acf2-b7b959b4469e_100x.jpg?v=1542307746",
+  },
+];
+
 //DEMO3
 const demo3 = [
   {
@@ -681,7 +781,7 @@ function renderRow1(arr = [], selector) {
   );
 }
 
-function renderDemo2(arr = [], selector) {
+function renderDemo3(arr = [], selector) {
   arr.map((val) =>
     $(
       `
@@ -690,6 +790,7 @@ function renderDemo2(arr = [], selector) {
           <div class="product-description">
             <div class="product-content">
               <div class="product-content-background"></div>
+              
               <div class="title-small">
                 ${val.small}
                 <span class="blue-text-color">${val.small_span_content}</span>
@@ -706,6 +807,138 @@ function renderDemo2(arr = [], selector) {
             src=${val.src}
           />
         </a>
+      </div>
+      `
+    ).appendTo(selector)
+  );
+}
+
+function renderProductDEMO2(arr = [], selector) {
+  arr.map((val) =>
+    $(
+      `
+      <div class="product">
+        <div class="product-image">
+          <a href="#" class="quickview">
+            <i class="flaticon-eye-variant-with-enlarged-pupil"></i>
+
+            <div class="mini-decrip">
+              <span>quick view</span>
+            </div>
+          </a>
+
+          <a href="#" class="heart">
+            <svg
+              viewBox="0 0 16 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.15625 1.34375C8.13542 1.375 8.10938 1.40625 8.07812 1.4375C8.05729 1.45833 8.03125 1.48438 8 1.51562C7.96875 1.48438 7.9375 1.45833 7.90625 1.4375C7.88542 1.40625 7.86458 1.375 7.84375 1.34375C7.39583 0.895833 6.88542 0.5625 6.3125 0.34375C5.75 0.114583 5.17188 0 4.57812 0C3.99479 0 3.42188 0.114583 2.85938 0.34375C2.29688 0.5625 1.79167 0.895833 1.34375 1.34375C0.90625 1.78125 0.572917 2.28125 0.34375 2.84375C0.114583 3.39583 0 3.97917 0 4.59375C0 5.20833 0.114583 5.79688 0.34375 6.35938C0.572917 6.91146 0.90625 7.40625 1.34375 7.84375L7.64062 14.1406C7.69271 14.1823 7.75 14.2135 7.8125 14.2344C7.875 14.2656 7.9375 14.2812 8 14.2812C8.0625 14.2812 8.125 14.2656 8.1875 14.2344C8.25 14.2135 8.30729 14.1823 8.35938 14.1406L14.6562 7.84375C15.0938 7.40625 15.4271 6.91146 15.6562 6.35938C15.8854 5.79688 16 5.20833 16 4.59375C16 3.97917 15.8854 3.39583 15.6562 2.84375C15.4271 2.28125 15.0938 1.78125 14.6562 1.34375C14.2083 0.895833 13.7031 0.5625 13.1406 0.34375C12.5781 0.114583 12 0 11.4062 0C10.8229 0 10.2448 0.114583 9.67188 0.34375C9.10938 0.5625 8.60417 0.895833 8.15625 1.34375ZM13.9531 7.125L8 13.0781L2.04688 7.125C1.71354 6.79167 1.45312 6.40625 1.26562 5.96875C1.08854 5.53125 1 5.07292 1 4.59375C1 4.11458 1.08854 3.65625 1.26562 3.21875C1.45312 2.78125 1.71354 2.39062 2.04688 2.04688C2.40104 1.70312 2.79688 1.44271 3.23438 1.26562C3.68229 1.08854 4.13542 1 4.59375 1C5.05208 1 5.5 1.08854 5.9375 1.26562C6.38542 1.44271 6.78125 1.70312 7.125 2.04688C7.20833 2.13021 7.28646 2.21875 7.35938 2.3125C7.44271 2.40625 7.51562 2.50521 7.57812 2.60938C7.67188 2.74479 7.8125 2.8125 8 2.8125C8.1875 2.8125 8.32812 2.74479 8.42188 2.60938C8.48438 2.50521 8.55208 2.40625 8.625 2.3125C8.70833 2.21875 8.79167 2.13021 8.875 2.04688C9.21875 1.70312 9.60938 1.44271 10.0469 1.26562C10.4948 1.08854 10.9479 1 11.4062 1C11.8646 1 12.3125 1.08854 12.75 1.26562C13.1979 1.44271 13.599 1.70312 13.9531 2.04688C14.2865 2.39062 14.5417 2.78125 14.7188 3.21875C14.9062 3.65625 15 4.11458 15 4.59375C15 5.07292 14.9062 5.53125 14.7188 5.96875C14.5417 6.40625 14.2865 6.79167 13.9531 7.125Z"
+                fill="black"
+              ></path>
+            </svg>
+
+            <div class="mini-decrip">
+              <span>you need to login</span>
+            </div>
+          </a>
+
+          <a href="#" class="compare">
+            <svg
+              width="40"
+              height="30"
+              viewBox="0 0 40 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 21C19 20.8 19 20.7 18.9 20.5L10.4 4.5C10 3.9 9 3.9 8.6 4.5L0.1 20.5C0 20.7 0 20.8 0 21C0 25.9 4.3 30 9.5 30C14.7 30 19 26 19 21ZM9.5 7.1L16.3 20H2.7L9.5 7.1ZM9.5 28C5.7 28 2.6 25.4 2.1 22H16.9C16.4 25.4 13.3 28 9.5 28Z"
+                fill="#000000"
+              ></path>
+              <path
+                d="M40 21C40 20.8 40 20.7 39.9 20.5L31.4 4.5C31.1 3.8 30 3.8 29.6 4.5L21.1 20.5C21 20.7 21 20.8 21 21C21 25.9 25.3 30 30.5 30C35.7 30 40 26 40 21ZM30.5 7.1L37.3 20H23.7L30.5 7.1ZM30.5 28C26.7 28 23.6 25.4 23.1 22H37.9C37.4 25.4 34.3 28 30.5 28Z"
+                fill="#000000"
+              ></path>
+              <path
+                d="M22.8 4H27C27.6 4 28 3.6 28 3C28 2.4 27.6 2 27 2H22.8C22.4 0.8 21.3 0 20 0C18.7 0 17.6 0.8 17.2 2H13C12.4 2 12 2.4 12 3C12 3.6 12.4 4 13 4H17.2C17.6 5.2 18.7 6 20 6C21.3 6 22.4 5.2 22.8 4ZM20 4C19.4 4 19 3.6 19 3C19 2.4 19.4 2 20 2C20.6 2 21 2.4 21 3C21 3.6 20.6 4 20 4Z"
+                fill="#000000"
+              ></path>
+            </svg>
+
+            <div class="mini-decrip">
+              <span>add to compare</span>
+            </div>
+          </a>
+
+          <a href="#" class="main-image">
+            <img
+              src="${val.main_src}"
+            />
+
+            <span class="more">
+              <span class="more-new">new</span>
+
+              <span class="more-sale">sale</span>
+            </span>
+          </a>
+        </div>
+
+        <div class="product-description">
+          <div class="description-title">${val.title}</div>
+
+          <ul class="description-rating-star">
+            <li><i class="flaticon-star"></i></li>
+            <li><i class="flaticon-star"></i></li>
+            <li><i class="flaticon-star"></i></li>
+            <li><i class="flaticon-star"></i></li>
+            <li><i class="${val.lastStar}"></i></li>
+          </ul>
+
+          <div class="name-of-product">
+            ${val.name}
+          </div>
+
+          <div class="description-price">$500.00</div>
+
+          <div class="color-options">
+            <div class="option">
+              <a href="#">
+                <img
+                  src="${val.option_src1}"
+                />
+              </a>
+            </div>
+
+            <div class="option">
+              <a href="#">
+                <img
+                  src="${val.option_src2}"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="size-options">
+            <span>s</span>
+
+            <span>m</span>
+
+            <span>l</span>
+          </div>
+
+          <div class="add-to-cart">
+            <div class="add-to-cart-container">
+              <span class="add-to-cart-btn">
+                <i class="flaticon-shopping-bag"></i>
+              </span>
+
+              <span class="add-to-cart-text">
+                add to cart
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
       `
     ).appendTo(selector)
@@ -759,8 +992,11 @@ $(document).ready(function () {
 
   renderCols(buyTheme, ".megaMenu-buyTheme");
 
-  //render demo 2
-  renderDemo2(demo3, ".demo3-container");
+  //render DEMO 2
+  renderProductDEMO2(demo2, ".demo2-product-container");
+
+  //render demo 3
+  renderDemo3(demo3, ".demo3-container");
 
   //big box dropdown obj-options
   $(".big-box-search").slideUp();
