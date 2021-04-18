@@ -871,7 +871,8 @@ function renderProductDEMO2(arr = [], selector) {
             </div>
           </a>
 
-          <a href="#" class="main-image">
+          <a target="_blank"
+          href="https://nguyentheluan.github.io/demo-shopping/" class="main-image">
             <img
               src="${val.main_src}"
             />
